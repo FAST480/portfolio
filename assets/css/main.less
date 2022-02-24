@@ -9,9 +9,10 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
-	background: url(../img/background.png) top center no-repeat , #000;
+	background: url(../img/background.png) center -200px no-repeat , #000;
 	background-size: cover;
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -269,6 +270,119 @@ h1,h2,h3,h4,h5,h6{
 	}
 	a:hover + img{
 		animation-play-state: running;
+	}
+}
+
+.skills {
+	padding: 70px 0 140px 0;
+}
+.skills__body {}
+.skills__offer {
+	margin-top: 100px;
+}
+.skills__item {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+.skills__item--name {
+	font-family: "Sansation", sans-serif;
+	font-size: 27px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.skills__item--progress {
+	display: flex;
+	align-items: center;
+}
+.skills__item--progressBar {
+	width: 1000px;
+	height: 1px;
+	background-color: rgba(255,255,255,.6);
+}
+.bar {
+	height: 1px;
+	background-color: #D92B2B;
+}
+.skills__item--progressPercent {
+	font-family: "Sansation", sans-serif;
+	color: #fff;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+
+.footer {
+	padding: 100px 0;
+	background: url(../img/bg-footer.svg) center top / cover;
+}
+.footer__body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__name {
+	color: #fff;
+	h3{
+		font-size: 30px;
+
+	}
+	p{
+		font-size: 24px;
+		font-family: "Sansation", sans-serif;
+	}
+}
+.footer__sides {
+	display: flex;
+}
+.footer__nav {}
+.footer__title {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer__nav--list {
+	margin-top: 25px;
+	list-style: none;
+	li{
+		margin-top: 5px;
+		&:first-child{
+			margin-top: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 21px;
+			transition: .2s;
+			&:hover{
+				color: #D92B2B;
+			}
+			&:focus{
+				color: #8A0000;
+			}
+			&:active{
+				color: rgba(255,255,255, .6);
+			}
+		}
+	}
+}
+.footer__contacts {
+	margin-left: 120px;
+}
+.footer__links {
+	margin-top: 25px;
+	display: flex;
+}
+.footer__links--item {
+	margin-right: 5px;
+	&:last-child{
+		margin-right: 0;
+	}
+	img{
+		width: 60px;
 	}
 }
 
