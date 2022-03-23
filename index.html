@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="assets/css/sansation.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<title>Персональный сайт</title>
+	<script src="assets/js/scroll.js" defer></script>
+	<script src="assets/js/parallax.js" defer></script>
 </head>
 <body>
 	
@@ -17,11 +19,11 @@
 					<div class="container">
 						<div class="nav__body">
 							<ul class="nav__menu">
-								<li><a href="#aboutme">Обо мне</a></li>
-								<li><a href="#hobbies">Увлечения</a></li>
-								<li><a href="#portfolio">Портфолио</a></li>
-								<li><a href="#skills">Навыки</a></li>
-								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="#aboutme" class="nav__menu--link">Обо мне</a></li>
+								<li><a href="#hobbies" class="nav__menu--link">Увлечения</a></li>
+								<li><a href="#portfolio" class="nav__menu--link">Портфолио</a></li>
+								<li><a href="#skills" class="nav__menu--link">Навыки</a></li>
+								<li><a href="#contacts" class="nav__menu--link">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -37,9 +39,9 @@
 								</div>
 								<div class="offer__perform--btn">
 									<img src="assets/img/btn-down.svg" alt="btn">
-									<a href="#portfolio"><img src="assets/img/arrow-down.svg" alt="arrow"></a>
+									<a href="#portfolio" class="arrow-down-link"><img class="img-svg" src="assets/img/arrow-down.svg" alt="arrow"></a>
 								</div>
-								<div class="circle"></div>
+								<div class="circle" data-depth="0.5"></div>
 							</div>
 						</div>
 					</div>
@@ -82,7 +84,7 @@
 						<div class="portfolio__item">
 							<div class="portfolio__item--image"><img src="assets/img/ph3.png" alt="photo"></div>
 							<div class="portfolio__item--info">
-								<div class="portfolio__item--infoText">Какое-то описание проекта</div>
+								<div class="portfolio__item--infoText">Нужно что-то о проекте написать. Мб как верстал, зачем, когда? рельный/нет и что-то такое.</div>
 								<div class="portfolio__item--infoButton">
 									<a href="https://fast480.github.io/activebox/" target="_blank">Смотреть</a>
 									<img src="assets/img/arrow-down.svg" alt="arrow">
@@ -92,7 +94,7 @@
 						<div class="portfolio__item">
 							<div class="portfolio__item--image"><img src="assets/img/ph4.png" alt="photo"></div>
 							<div class="portfolio__item--info">
-								<div class="portfolio__item--infoText">Какое-то описание проекта</div>
+								<div class="portfolio__item--infoText">Нужно что-то о проекте написать. Мб как верстал, зачем, когда? рельный/нет и что-то такое.</div>
 								<div class="portfolio__item--infoButton">
 									<a href="https://fast480.github.io/startup/" target="_blank">Смотреть</a>
 									<img src="assets/img/arrow-down.svg" alt="arrow">
@@ -102,7 +104,7 @@
 						<div class="portfolio__item">
 							<div class="portfolio__item--image"><img src="assets/img/ph5.png" alt="photo"></div>
 							<div class="portfolio__item--info">
-								<div class="portfolio__item--infoText">Какое-то описание проекта</div>
+								<div class="portfolio__item--infoText">Нужно что-то о проекте написать. Мб как верстал, зачем, когда? рельный/нет и что-то такое.</div>
 								<div class="portfolio__item--infoButton">
 									<a href="https://fast480.github.io/waxom1219.github.io/" target="_blank">Смотреть</a>
 									<img src="assets/img/arrow-down.svg" alt="arrow">
@@ -171,9 +173,9 @@
 						<div class="footer__contacts">
 							<div class="footer__title"><h3>Мои контакты</h3></div>
 							<div class="footer__links">
-								<a href="https://t.me/idlocked14" class="footer__links--item"><img src="assets/img/telegram.svg" alt="telegr"></a>
-								<a href="https://www.instagram.com/idlocked14/" class="footer__links--item"><img src="assets/img/inst.svg" alt="inst"></a>
-								<a href="https://www.vk.com/idlocked14" class="footer__links--item"><img src="assets/img/vk.svg" alt="vk"></a>
+								<a href="https://t.me/idlocked14" taret="_blank" class="footer__links--item"><img src="assets/img/telegram.svg" alt="telegr"></a>
+								<a href="https://www.instagram.com/idlocked14/" taret="_blank" class="footer__links--item"><img src="assets/img/inst.svg" alt="inst"></a>
+								<a href="https://www.vk.com/idlocked14" taret="_blank" class="footer__links--item"><img src="assets/img/vk.svg" alt="vk"></a>
 							</div>
 						</div>
 					</div>
@@ -183,8 +185,7 @@
 
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
 
 </body>
 </html>
